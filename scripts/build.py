@@ -107,13 +107,14 @@ home = f"""
       </div>
       <div class="hero-caption"><span class="tiny-rule"></span> Founded by Matthew Cooper <span class="caption-divider">/</span> Open to every perspective</div>
     </div>
-    <div class="hero-art" role="img" aria-label="Abstract lines converging on a shared center">
+    <div class="hero-art" role="img" aria-label="Abstract lines converging on common ground: listen, examine, advance">
       <div class="art-orbit art-orbit-one"></div>
       <div class="art-orbit art-orbit-two"></div>
       <div class="art-orbit art-orbit-three"></div>
       <div class="art-center"><span>COMMON<br>GROUND</span><i></i></div>
-      <div class="art-label art-label-top">01 / Listen</div>
-      <div class="art-label art-label-bottom">02 / Examine &nbsp;&nbsp; 03 / Advance</div>
+      <div class="art-label art-label-left">01 / Listen</div>
+      <div class="art-label art-label-middle">02 / Examine</div>
+      <div class="art-label art-label-right">03 / Advance</div>
     </div>
   </div>
 </section>
