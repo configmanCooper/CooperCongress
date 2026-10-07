@@ -2,7 +2,7 @@
 
 A static, responsive website for Cooper Congress, founded by Matthew Cooper. The site introduces its mission and values, the founder and first two scholarship recipients, and the Cooper Congress Scholarship.
 
-**Live site:** https://configmancooper.github.io/CooperCongress/
+**Site:** https://coopercongress.com/
 
 **GitHub repository:** https://github.com/configmanCooper/CooperCongress
 
@@ -31,7 +31,7 @@ Run `python scripts/check.py` to validate the generated pages and local links.
 
 ## GitHub Pages
 
-Pages publishes the `main` branch from `/(root)`. Pushes to `main` deploy automatically. All internal links and asset paths are document relative, so the site works under its project URL. `.nojekyll` tells Pages to serve the files directly. The build script generates canonical metadata, `robots.txt`, and `sitemap.xml` for the current GitHub Pages URL.
+Pages publishes the `main` branch from `/(root)` with `coopercongress.com` as its custom domain. Pushes to `main` deploy automatically. All internal links and asset paths are document relative, so they work at the custom domain root. `.nojekyll` tells Pages to serve the files directly. The build script generates canonical metadata, `robots.txt`, and `sitemap.xml` for the custom domain.
 
 ## Updating the scholarship
 

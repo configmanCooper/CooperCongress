@@ -5,7 +5,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SCHOLARSHIP_URL = "https://bold.org/scholarships/cooper-congress-scholarship/"
-SITE_URL = "https://configmancooper.github.io/CooperCongress/"
+SITE_URL = "https://coopercongress.com/"
 
 NAV = [
     ("index.html", "Home"),
