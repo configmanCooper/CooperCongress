@@ -5,6 +5,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SCHOLARSHIP_URL = "https://bold.org/scholarships/cooper-congress-scholarship/"
+SITE_URL = "https://configmancooper.github.io/CooperCongress/"
 
 NAV = [
     ("index.html", "Home"),
@@ -22,6 +23,8 @@ def link(url, label, css="", external=False):
 
 
 def layout(page, title, description, body):
+    canonical = SITE_URL if page == "index.html" else SITE_URL + page
+    robots = '  <meta name="robots" content="noindex">\n' if page == "404.html" else ""
     nav = "".join(
         f'<a href="./{url}"{current}>{label}</a>'
         for url, label in NAV
@@ -35,6 +38,11 @@ def layout(page, title, description, body):
   <meta name="theme-color" content="#142b35">
   <meta name="description" content="{escape(description, quote=True)}">
   <title>{escape(title)} | Cooper Congress</title>
+{robots}  <link rel="canonical" href="{canonical}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{escape(title, quote=True)} | Cooper Congress">
+  <meta property="og:description" content="{escape(description, quote=True)}">
+  <meta property="og:url" content="{canonical}">
   <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
   <link rel="stylesheet" href="./assets/css/styles.css">
   <script defer src="./assets/js/main.js"></script>
@@ -225,3 +233,19 @@ layout("values.html", "Our values", "Listen to other perspectives. Be skeptical 
 layout("people.html", "Our people", "Meet Cooper Congress founder Matthew Cooper and scholarship winners Lauryn Russell and Finlay Ross.", people)
 layout("scholarship.html", "The scholarship", "Learn about the Cooper Congress Scholarship, its planned 2027 deadline, eligibility and application requirements, and its winners.", scholarship)
 layout("404.html", "Page not found", "Find your way back to Cooper Congress.", not_found)
+
+sitemap_pages = [url for url, _ in NAV]
+(ROOT / "sitemap.xml").write_text(
+    '<?xml version="1.0" encoding="UTF-8"?>\n'
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+    + "".join(
+        f"  <url><loc>{SITE_URL if page == 'index.html' else SITE_URL + page}</loc></url>\n"
+        for page in sitemap_pages
+    )
+    + "</urlset>\n",
+    encoding="utf-8",
+)
+(ROOT / "robots.txt").write_text(
+    "User-agent: *\nAllow: /\nSitemap: " + SITE_URL + "sitemap.xml\n",
+    encoding="utf-8",
+)

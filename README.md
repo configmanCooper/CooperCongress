@@ -2,6 +2,10 @@
 
 A static, responsive website for Cooper Congress, founded by Matthew Cooper. The site introduces its mission and values, the founder and first two scholarship recipients, and the Cooper Congress Scholarship.
 
+**Live site:** https://configmancooper.github.io/CooperCongress/
+
+**GitHub repository:** https://github.com/configmanCooper/CooperCongress
+
 ## Pages
 
 - `index.html` — home
@@ -25,14 +29,9 @@ Open `http://localhost:8000/`.
 
 Run `python scripts/check.py` to validate the generated pages and local links.
 
-## Publish on GitHub Pages
+## GitHub Pages
 
-1. Create a GitHub repository and push this folder's contents to its default branch.
-2. In the repository, open **Settings → Pages**.
-3. Choose **Deploy from a branch**, select the default branch and **/(root)**, then save.
-4. GitHub will display the site URL after deployment.
-
-All internal links and asset paths are document relative, so the site also works at a project URL such as `https://USERNAME.github.io/CooperCongress/`. `.nojekyll` tells Pages to serve the files directly. No domain has been assumed.
+Pages publishes the `main` branch from `/(root)`. Pushes to `main` deploy automatically. All internal links and asset paths are document relative, so the site works under its project URL. `.nojekyll` tells Pages to serve the files directly. The build script generates canonical metadata, `robots.txt`, and `sitemap.xml` for the current GitHub Pages URL.
 
 ## Updating the scholarship
 
