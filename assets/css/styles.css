@@ -86,15 +86,7 @@ em{font-weight:400;color:var(--copper-dark)}
 .outcome-card{min-height:320px;padding:26px 23px 28px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(255,253,248,.42);transition:background .2s ease,transform .2s ease}
 .outcome-card:hover{background:var(--white);transform:translateY(-4px);box-shadow:var(--shadow)}
 .card-number{font-family:var(--display);font-size:13px}
-.outcome-symbol{width:49px;height:49px;margin:30px 0 20px;position:relative}
-.symbol-sustain{border:2px solid var(--copper);border-radius:50%}
-.symbol-sustain::after{content:"";position:absolute;left:11px;top:4px;width:24px;height:32px;border-left:2px solid var(--copper);transform:rotate(35deg)}
-.symbol-resilient{border:2px solid var(--copper);border-radius:50% 50% 0 0}
-.symbol-resilient::after{content:"";position:absolute;inset:12px;border:2px solid var(--copper);border-radius:50% 50% 0 0}
-.symbol-efficient{border:2px solid var(--copper);transform:rotate(45deg)}
-.symbol-efficient::after{content:"";position:absolute;width:13px;height:13px;top:16px;left:16px;background:var(--copper)}
-.symbol-life{border:2px solid var(--copper);border-radius:50%}
-.symbol-life::after{content:"";position:absolute;width:21px;height:21px;top:12px;left:12px;border:2px solid var(--copper);border-radius:50%}
+.outcome-symbol{display:block;width:49px;height:49px;margin:30px 0 20px;fill:none;stroke:var(--copper);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .outcome-card h3{font-size:23px;margin-bottom:.75rem}
 .outcome-card p{font-size:14px;color:var(--ink-soft);line-height:1.65;margin:0}
 .values-preview{background:#e9eee8}
