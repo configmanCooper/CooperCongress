@@ -1,6 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#142b35"/>
-  <circle cx="32" cy="32" r="24" fill="none" stroke="#efeae0" stroke-width="1.5"/>
-  <text x="16" y="41" fill="#fffdf8" font-family="Georgia,serif" font-size="31">C</text>
-  <text x="31" y="46" fill="#db9675" font-family="Georgia,serif" font-size="24">C</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 131 109" role="img" aria-label="Cooper Congress symbol">
+  <path fill="#122a40" d="M69 22 62 32C49 25 38 28 30 36c-12 12-12 32 0 43 8 8 20 10 32 3l8 9c-17 10-37 7-50-7C5 68 5 43 21 27 34 13 53 10 69 22Z"/>
+  <path fill="#a36d50" d="M58 32c14-17 40-20 59-1l-9 9C96 26 80 25 68 38Z"/>
+  <path fill="#a36d50" d="M62 78c13 9 32 8 46-9l9 8c-17 20-41 23-59 6Z"/>
+  <path fill="#122a40" d="M66 31h2l1 12h-4Z"/>
+  <path fill="#122a40" d="M49 59c1-10 8-17 17-18 10-1 19 7 20 18-12-7-25-8-37 0Z"/>
+  <path fill="#122a40" d="M48 63h5v12h-5zm9-2h5v14h-5zm9-1h5v15h-5zm9 1h5v14h-5zm9 2h5v12h-5z"/>
 </svg>

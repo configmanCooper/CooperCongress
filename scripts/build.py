@@ -52,7 +52,7 @@ def layout(page, title, description, body):
   <header class="site-header">
     <div class="header-inner shell">
       <a class="brand" href="./index.html" aria-label="Cooper Congress home">
-        <span class="brand-mark" aria-hidden="true"><span>C</span><span>C</span></span>
+        <img class="brand-mark" src="./assets/images/favicon.svg" alt="" width="52" height="43">
         <span class="brand-name">Cooper<br>Congress</span>
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
